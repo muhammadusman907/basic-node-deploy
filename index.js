@@ -4,7 +4,7 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
-app.use("/message" , messageRouter )
+// app.use("/message" , messageRouter )
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

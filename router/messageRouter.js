@@ -1,7 +1,7 @@
-import express from 'express';
-import { getMessage } from '../controller/messageController.js';
-const messageRouter = express() ;
+// import express from 'express';
+// import { getMessage } from '../controller/messageController.js';
+// const messageRouter = express() ;
 
-messageRouter.get("/get-message" , getMessage) ;
+// messageRouter.get("/get-message" , getMessage) ;
 
-export { messageRouter }
+// export { messageRouter }

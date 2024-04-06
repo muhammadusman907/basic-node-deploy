@@ -1,5 +1,5 @@
 import express from "express" ;
-import { messageRouter } from "./router/messageRouter.js";
+// import { messageRouter } from "./router/messageRouter.js";
 const app = express();
 app.get("/", (req, res) => {
   res.send("Express on Vercel");

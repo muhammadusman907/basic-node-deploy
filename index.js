@@ -1,7 +1,8 @@
-import express from "express";
-const app = express();
-const PORT = process.env.PORT || 3000;
-app.get("/", (req, res) => {
+var express = require("express");
+var app = express();
+var PORT = process.env.PORT || 3000;
+
+app.get("/", function (req, res) {
   try {
     res.status(200).send("Express on Vercel");
   } catch (error) {
@@ -9,6 +10,6 @@ app.get("/", (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(PORT, function () {
+  console.log("Server is running on port " + PORT);
 });
